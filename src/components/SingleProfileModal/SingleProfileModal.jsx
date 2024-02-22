@@ -9,7 +9,7 @@ const SingleProfileModal = ({singleProfileData, handleOk, isModalOpen, handleCan
     
   }
   return (
-    <Modal footer={null} title={`${singleProfileData?.name || singleProfileData?.login} Profile`} open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
+    <Modal centered footer={null} title={`${singleProfileData?.name || singleProfileData?.login} Profile`} open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
         <div className='center-div p-3'>
         <Card
       hoverable

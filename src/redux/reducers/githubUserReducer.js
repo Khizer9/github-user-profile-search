@@ -9,7 +9,7 @@ const initialState = {
 
 export const fetchGithubUsers = createAsyncThunk('users/fetchUsers', async (username, { rejectWithValue }) => {
     try {
-        const  token = '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';
+        const  token = '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';
         const url = username ? `https://api.github.com/users/${username}` : 'https://api.github.com/users'
         const response = await axios.get(url, {
             headers: {
